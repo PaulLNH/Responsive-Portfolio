@@ -1,0 +1,483 @@
+/* ------------ MAIN ELEMENTS STYLING (CONCURENT ACROSS ALL PAGES) ------------ */
+
+body {
+  /* default text settings per recommended-homework-assignment.md */
+  font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+  color: #777777;
+  background: url("../images/background.png");
+}
+
+a {
+  /* Keeping links in text concurent with the theme */
+  color: #777777;
+}
+
+h1 {
+  /* default heading font settings per recommended-homework-assignment.md */
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+  color: #4aaaa5;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  /* default heading font settings per recommended-homework-assignment.md */
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+  color: #4aaaa5;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#logo {
+  /* Logo nested in the menu bar */
+  float: left;
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+  font-weight: bolder;
+  background-color: #4aaaa5;
+  color: white;
+  margin-left: 15%;
+  padding: 20px;
+  font-size: 2em;
+  /* This sets the logo to the top of the screen and aligns it with the main element section */
+  position: relative;
+  left: -15px;
+  top: -20px;
+  cursor: default;
+}
+
+hr {
+  /* Changes the color of the dividing lines */
+  border: 1px solid #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------- TOP NAV BAR ---------------------------- */
+
+/* Main object that houses the menu bar */
+
+ul {
+  /* default heading font settings per recommended-homework-assignment.md */
+  background-color: #ffffff;
+  border-color: #cccccc;
+  border-bottom: 1px solid;
+  padding: 20px;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+li {
+  /* For some reason if float right is on the UL element it puts them in a verticle line, this puts them side by side */
+  float: right;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  right: 15%;
+}
+
+li a {
+  /* Adjusts the menu items */
+  color: #777777;
+  clear: both;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+li a:hover {
+  /* Mouseover color change on nav bar */
+  font-weight: bolder;
+  color: #4aaaa5;
+}
+
+.divider {
+  /* Changes the folor of the pipes between the menu items */
+  color: #cccccc;
+}
+
+/* ---------------------------- CONNECT WITH ME SIDEBAR ---------------------------- */
+
+/* This element houses the Connect With Me sidebar */
+
+.contact {
+  /* Floating this right works, but not sure how it would do for responsive design. Looks great on my monitors */
+  float: right;
+  /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+  background-color: #ffffff;
+  padding: 20px;
+  margin-right: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  /* Sets the size of all images, this is to get the contact me images the same size */
+  width: 50px;
+  height: 50px;
+}
+
+.social {
+  /* Overwrites the <a> element and removes the annoying underline between the logo images */
+  text-decoration: none;
+}
+
+/* Puts a border around the social logos for seamless transition when it goes active */
+
+.contact img {
+  border: 2px solid #ffffff;
+}
+
+/* Puts a colored border around the social logos when you mouseover */
+
+.contact img:hover {
+  border: 2px solid #4aaaa5;
+}
+
+/* ---------------------------- FOOTER ---------------------------- */
+
+footer {
+  /* Sets the footer properties, this is fixed to bottom of page, can test by going to contact page and making the message box bigger */
+  position: fixed;
+  bottom: 0px;
+  background-color: #666666;
+  padding: 40px;
+  width: 100%;
+  /* Adds that blue bar above the footer to keep theme concurent  */
+  border-top: 10px solid #4aaaa5;
+}
+
+#copyright {
+  /* centers copyright text, this is done as an ID so it overwrites previous styling */
+  text-align: center;
+}
+
+#copyright a {
+  /* removes line on copyright link text and adds color for better contrast (sorry, it's not a color in the assignment but it looks better) */
+  color: #acacac;
+  text-decoration: none;
+}
+
+/* ---------------------------- MAIN CONTAINING ELEMENT FOR EACH PAGE ---------------------------- */
+
+.about,
+.form,
+.portfolio {
+  clear: both;
+  /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+  background-color: #ffffff;
+  padding: 20px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  display: inline-block;
+  align-content: center;
+  /* THIS NEEDS TO BE CHANGED -- 960px WAS FORTHE ENTIRE LENGTH OF THE "EASY" HOMEWORK, FIND ADJUSTMENTS FOR RECCOMENDED!! */
+  width: 640px;
+}
+
+/* ---------------------------- INDEX.HTML STYLING ---------------------------- */
+
+/* ------------ ABOUT ME SECTION NOTE: THIS IS THE ONLY ELEMENT THAT CHANGES BETWEEN PAGES ------------ */
+
+#profileImg {
+  /* adjusts the size and orientation of the profile picture */
+  width: 200px;
+  height: 203px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* Allows text to flow around it */
+  float: left;
+}
+
+/* ---------------------------- CONTACT.HTML STYLING ---------------------------- */
+
+/* ------------ CONTACT FORM NOTE: THIS IS THE ONLY ELEMENT THAT CHANGES BETWEEN PAGES ------------ */
+
+label {
+  /* All labels have the same size and alignment */
+  display: inline-block;
+  /* Don't really need the width here in this instance, but would be a good thing in a responsive enviornment */
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  /* Ghost text for examples */
+  color: #77777783;
+  /* Have fields match the div width */
+  width: 100%;
+  box-sizing: border-box;
+  /* Text borders */
+  border: 1px solid #999;
+  padding: 5px;
+  /* This margin allows the fields to appear seperate from one another and paired with their coresponding label*/
+  margin-bottom: 15px;
+  /* Better UX when they can't resize the box to mess with the width of the page */
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  /* Highlight on active elements - allows the user to see where they are typing faster than searching for the blinky line */
+  border-color: #000;
+}
+
+textarea {
+  /* Align label with top of text field */
+  vertical-align: top;
+  /* Increase the size of text field */
+  height: 10em;
+}
+
+button {
+  /* Border color is so it can have a hover property and not get all wonky */
+  background-color: #4aaaa5;
+  border: 2px solid #4aaaa5;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  /* Changes the color of the button when moused over */
+  background-color: white;
+  color: #4aaaa5;
+  /* Just incase the button changing color wasn't indicator enough that they were moused over, give them a pointy finger to click with too! */
+  cursor: pointer;
+}
+
+/* ---------------------------- PORTFOLIO.HTML STYLING ---------------------------- */
+
+/* ------------ PORTFOLIO GRID NOTE: THIS IS THE ONLY ELEMENT THAT CHANGES BETWEEN PAGES ------------ */
+
+/* Using ID to overwrite the img class CSS - Possibly a better way to do this, especailly if there were a lot of these on the page */
+
+#deals,
+#gym,
+#stars,
+#esports,
+#hike {
+  /* sets the size of these images to the container size (Don't worry, we pre-defined the container to match the resolution of the photos) */
+  width: 100%;
+  height: 100%;
+}
+
+/* BELOW IS (no longer) TRIAL CODE */
+
+/* Container (div) holding the image and the text */
+
+.container {
+  /* Sets the positioning of the element */
+  position: relative;
+  float: left;
+  /* This is our image resolution size to perfectly fit inside our div with 20px gap on all sides */
+  width: 310px;
+  height: 220px;
+  /* Ok, I lied... this is the one thing I got tripped up on. Didn't want to make each element an ID like I did above made 10px border because adding 20px would throw off my edges*/
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Text Banner on the image */
+
+.text-block {
+  /* Sets positioning of the banner text on the image containers */
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  left: 0px;
+  /* Banner text styling */
+  background-color: #4aaaa5;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* No need to have the type curser active on these */
+  cursor: default;
+}
+
+/* Evening out the grid, adding margins on right/left based on position so the edges can be lined up with the content wall */
+
+.colOne {
+  /* These are the grid spaces in the left most column, needs spacing to the right */
+  margin-right: 10px;
+}
+
+.colTwo {
+  /* These are the grid spaces in the right most column, needs spacing to the left */
+  margin-left: 10px;
+}
+
+/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN OVER 980px ---------------------------- */
+/* Desktop/laptop settings over 980px */
+
+@media screen and (min-width: 981px) {
+  .about,
+  .form,
+  .portfolio {
+    clear: both;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    align-content: center;
+    /* THIS NEEDS TO BE CHANGED -- 960px WAS FORTHE ENTIRE LENGTH OF THE "EASY" HOMEWORK, FIND ADJUSTMENTS FOR RECCOMENDED!! */
+    width: 575px;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  #profileImg {
+    /* adjusts the size and orientation of the profile picture */
+    width: 200px;
+    height: 203px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* Allows text to flow around it */
+    float: left;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .contact {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  #logo {
+    margin-left: 5%;
+  }
+}
+
+/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN OVER 980px ---------------------------- */
+/* Desktop/laptop settings under 980px */
+
+@media screen and (max-width: 980px) {
+  .about,
+  .form,
+  .portfolio {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #profileImg {
+    /* adjusts the size and orientation of the profile picture */
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+  }
+}
+
+/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN 768px ---------------------------- */
+/* iPad / Tablet settings 768px */
+
+@media screen and (max-width: 768px) {
+  .about,
+  .form,
+  .portfolio {
+    clear: both;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    align-content: center;
+    width: 83%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profileImg {
+    /* adjusts the size and orientation of the profile picture */
+    width: 200px;
+    height: 203px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* Allows text to flow around it */
+    float: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    clear: both;
+    display: inline-block;
+    width: 83%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 18%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    margin-left: 5%;
+  }
+}
+
+/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN 640px ---------------------------- */
+/* iPhone / Phone screen settings 640px */
+
+@media screen and (max-width: 640px) {
+  .about,
+  .form,
+  .portfolio {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #profileImg {
+    /* adjusts the size and orientation of the profile picture */
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact {
+    clear: both;
+    display: inline-block;
+    width: 83%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 18%;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #logo {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+  }
+}
+
+/* Change the menu for smaller screens */
+@media screen and (max-width: 640px) {
+  ul {
+    /* default heading font settings per recommended-homework-assignment.md */
+    width: 100%;
+    height: 85px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

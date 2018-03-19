@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Paul Laird</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Resets all CSS on the page -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <!-- Calls custom styling -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navigation bar or "menu" bar -->
+  <ul>
+    <!-- Name as the logo to display in upper left w/ box around it. -->
+    <div id="logo">Paul Laird</div>
+    <!-- don't ask why these are in backward order, my floats in CSS put them that way... We'll just roll with it no one will know from a UI/UX perspective -->
+    <li>
+      <!-- link to contact form -->
+      <a href="contact.html">Contact</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <!-- Link to portfolio grid page -->
+      <a href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <!-- Link to the home page / about me page -->
+      <a href="index.html">About</a>
+    </li>
+  </ul>
+
+
+  <!-- START OF ABOUT ME SECTION - THIS IS THE UNIQUE ELEMENT TO THIS PAGE -->
+  <section class="about">
+    <!-- About Me header -->
+    <h1>About Me</h1>
+    <!-- Horizontal line -->
+    <hr>
+    <!-- Photo to display in the About Me section -->
+    <img id="profileImg" src="assets/images/paul.png" alt="Paul Laird Competing in the Tactical Strength Challenge">
+    <!-- About me text -->
+    <p>My name is Paul Laird, I’m a husband to a phenomenal wife, father of three awesome children, the sole financial provider
+      for my family, and I just quit my corporate job. This might seem absurd but hear me out.</p>
+    <br>
+    <p>I’m also an outdoors enthusiast, entrepreneur, and web developer. I love being outdoors and staying active, something
+      my desk job would never allow. I find businesses fascinating! I’ve created a couple small businesses myself and it’s
+      something I truly enjoy. Being creative and implementing a variety of business systems is not something I had the freedom
+      to do locked in my office. It was time to break up with that oppressive relationship I called a job. I didn’t walk
+      away from the paycheck, but rather I opened the door to my own creativity.</p>
+    <br>
+    <p>You see, to me success is measured by the lives I impact, the experiences I share and the memories that are created.
+      That is why I quit my job, to help people just like you.</p>
+    <br>
+    <p>If you have an interesting project you'd like to talk about,
+      <a href="contact.html">let me know!</a>
+    </p>
+    <br>
+    <p>Together, we will build something great.</p>
+  </section>
+  <!-- END OF ABOUT ME SECTION - THIS IS THE UNIQUE ELEMENT TO THIS PAGE -->
+
+  <!-- START OF CONNECT WITH ME SIDE BAR -->
+  <div class="contact">
+    <!-- Heading, needs to be centered -->
+    <h2>Connect with Me</h2>
+    <!-- Horizontal line -->
+    <hr>
+    <!-- GitHub link -->
+    <a class="social" href="https://github.com/PaulLNH" target="_blank">
+      <!-- GitHub logo -->
+      <img src="assets/images/github.png" alt="Check out my GitHub!">
+    </a>
+    <!-- LinkedIn link -->
+    <a class="social" href="https://www.linkedin.com/in/paul-laird/" target="_blank">
+      <!-- LinkedIn logo -->
+      <img src="assets/images/linkedin.png" alt="Follow me on LinkedIn.">
+    </a>
+    <!-- Stack Overflow link -->
+    <a class="social" href="https://stackoverflow.com/story/paullaird" target="_blank">
+      <!-- Stack Overflow logo -->
+      <img src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
+    </a>
+  </div>
+  <!-- END OF CONNECT WITH ME SIDE BAR -->
+
+  <!-- START OF COPYRIGHT FOOTER -->
+  <footer>
+    <div id="copyright">
+      <!-- Links to my deployed page (although this is outside the scope of this assignment) - also opens it in a new window -->
+      <a href="http://laird.codes" target="_blank">
+        <!-- small copyright text -->
+        <small>&copy; Copyright 2018 Paul Laird</small>
+      </a>
+    </div>
+  </footer>
+  <!-- END OF COPYRIGHT FOOTER -->
+</body>
+
+</html>

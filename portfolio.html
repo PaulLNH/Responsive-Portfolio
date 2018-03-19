@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Paul Laird</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Resets all CSS on the page -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <!-- Calls custom styling -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navigation bar or "menu" bar -->
+  <ul>
+    <!-- Name as the logo to display in upper left w/ box around it. -->
+    <div id="logo">Paul Laird</div>
+    <!-- don't ask why these are in backward order, my floats in CSS put them that way... We'll just roll with it no one will know from a UI/UX perspective -->
+    <li>
+      <!-- link to contact form -->
+      <a href="contact.html">Contact</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <!-- Link to portfolio grid page -->
+      <a href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="divider">|</li>
+    <li>
+      <!-- Link to the home page / about me page -->
+      <a href="index.html">About</a>
+    </li>
+  </ul>
+
+
+
+  <!-- START OF PORTFOLIO GRID - THIS IS THE UNIQUE ELEMENT TO THIS PAGE -->
+  <section class="portfolio">
+    <!-- About Me header -->
+    <h1>Portfolio</h1>
+    <!-- Horizontal line -->
+    <hr>
+
+    <!-- Making Deals banner -->
+    <div class="container colOne">
+      <img id="deals" src="assets/images/deals.jpg" alt="Making Deals">
+      <div class="text-block">
+        <h4>Making Deals</h4>
+      </div>
+    </div>
+    <!-- eSports banner -->
+    <div class="container colTwo">
+      <img id="esports" src="assets/images/eSports.jpg" alt="eSports">
+      <div class="text-block">
+        <h4>eSports</h4>
+      </div>
+    </div>
+    <!-- gym banner -->
+    <div class="container colOne">
+      <img id="esports" src="assets/images/gym.jpg" alt="Those sweet gainz">
+      <div class="text-block">
+        <h4>Working Out</h4>
+      </div>
+    </div>
+    <!-- Hiking banner -->
+    <div class="container colTwo">
+      <img id="hike" src="assets/images/hikeNH.jpg" alt="Explore NH">
+      <div class="text-block">
+        <h4>Hike NH</h4>
+      </div>
+    </div>
+    <!-- stars banner -->
+    <div class="container colOne">
+      <img id="stars" src="assets/images/stars.jpg" alt="Enjoy the night sky">
+      <div class="text-block">
+        <h4>Night Sky</h4>
+      </div>
+    </div>
+  </section>
+  <!-- END OF PORTFOLIO GRID - THIS IS THE UNIQUE ELEMENT TO THIS PAGE -->
+
+  <!-- START OF CONNECT WITH ME SIDE BAR -->
+  <div class="contact">
+    <!-- Heading, needs to be centered -->
+    <h2>Connect with Me</h2>
+    <!-- Horizontal line -->
+    <hr>
+    <!-- GitHub link -->
+    <a class="social" href="https://github.com/PaulLNH" target="_blank">
+      <!-- GitHub logo -->
+      <img src="assets/images/github.png" alt="Check out my GitHub!">
+    </a>
+    <!-- LinkedIn link -->
+    <a class="social" href="https://www.linkedin.com/in/paul-laird/" target="_blank">
+      <!-- LinkedIn logo -->
+      <img src="assets/images/linkedin.png" alt="Follow me on LinkedIn.">
+    </a>
+    <!-- Stack Overflow link -->
+    <a class="social" href="https://stackoverflow.com/story/paullaird" target="_blank">
+      <!-- Stack Overflow logo -->
+      <img src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
+    </a>
+  </div>
+  <!-- END OF CONNECT WITH ME SIDE BAR -->
+
+  <!-- START OF COPYRIGHT FOOTER -->
+  <footer>
+    <div id="copyright">
+      <!-- Links to my deployed page (although this is outside the scope of this assignment) - also opens it in a new window -->
+      <a href="http://laird.codes" target="_blank">
+        <!-- small copyright text -->
+        <small>&copy; Copyright 2018 Paul Laird</small>
+      </a>
+    </div>
+  </footer>
+  <!-- END OF COPYRIGHT FOOTER -->
+</body>
+
+</html>
