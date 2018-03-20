@@ -28,6 +28,13 @@ h2 {
   font-size: 1.25em;
 }
 
+hr {
+  /* Changes the color of the dividing lines */
+  border: 1px solid #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #logo {
   /* Logo nested in the menu bar */
   float: left;
@@ -35,21 +42,13 @@ h2 {
   font-weight: bolder;
   background-color: #4aaaa5;
   color: white;
-  margin-left: 15%;
+  margin-left: 10%;
   padding: 20px;
   font-size: 2em;
   /* This sets the logo to the top of the screen and aligns it with the main element section */
   position: relative;
-  left: -15px;
-  top: -20px;
+  top: 0;
   cursor: default;
-}
-
-hr {
-  /* Changes the color of the dividing lines */
-  border: 1px solid #cccccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /* ---------------------------- TOP NAV BAR ---------------------------- */
@@ -69,10 +68,9 @@ ul {
 li {
   /* For some reason if float right is on the UL element it puts them in a verticle line, this puts them side by side */
   float: right;
-  text-align: center;
   padding: 5px;
   position: relative;
-  right: 15%;
+  right: 10%;
 }
 
 li a {
@@ -106,7 +104,7 @@ li a:hover {
   /* adds a background color, sets the element to an inline block and adjusts the sizing. */
   background-color: #ffffff;
   padding: 20px;
-  margin-right: 15%;
+  margin-right: 10%;
   display: inline-block;
   text-align: center;
 }
@@ -167,7 +165,7 @@ footer {
   /* adds a background color, sets the element to an inline block and adjusts the sizing. */
   background-color: #ffffff;
   padding: 20px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 5%;
   display: inline-block;
   align-content: center;
@@ -313,171 +311,204 @@ button:hover {
   margin-left: 10px;
 }
 
-/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN OVER 980px ---------------------------- */
-/* Desktop/laptop settings over 980px */
+/* ---------------------------- MEDIA QUERIES FOR NAV BAR ---------------------------- */
 
-@media screen and (min-width: 981px) {
-  .about,
-  .form,
-  .portfolio {
-    clear: both;
-    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
-    background-color: #ffffff;
-    padding: 20px;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    display: inline-block;
-    align-content: center;
-    /* THIS NEEDS TO BE CHANGED -- 960px WAS FORTHE ENTIRE LENGTH OF THE "EASY" HOMEWORK, FIND ADJUSTMENTS FOR RECCOMENDED!! */
-    width: 575px;
+@media screen and (min-width: 640px) {
+  li {
+    /* For some reason if float right is on the UL element it puts them in a verticle line, this puts them side by side */
+    float: left;
+    padding: 5px;
+    position: relative;
+    left: 35%;
   }
 }
 
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 768px) {
+  li {
+    /* For some reason if float right is on the UL element it puts them in a verticle line, this puts them side by side */
+    float: right;
+    padding: 5px;
+    position: relative;
+    left: 0px;
+    right: 2%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  li {
+    /* For some reason if float right is on the UL element it puts them in a verticle line, this puts them side by side */
+    float: right;
+    padding: 5px;
+    position: relative;
+    left: -10%;
+    right: 10%;
+  }
+}
+
+/* ---------------------------- MEDIA QUERIES FOR LOGO ---------------------------- */
+
+@media screen and (min-width: 640px) {
+  #logo {
+    /* Logo nested in the menu bar */
+    float: none;
+    font-family: "Georgia", "Times", "Times New Roman", "serif";
+    font-weight: bolder;
+    background-color: #4aaaa5;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 2em;
+    /* This sets the logo to the top of the screen and aligns it with the main element section */
+    text-align: center;
+    cursor: default;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    /* Logo nested in the menu bar */
+    float: left;
+    font-family: "Georgia", "Times", "Times New Roman", "serif";
+    font-weight: bolder;
+    background-color: #4aaaa5;
+    color: white;
+    margin-left: 2%;
+    padding: 20px;
+    font-size: 2em;
+    /* This sets the logo to the top of the screen and aligns it with the main element section */
+    position: relative;
+    top: 0;
+    cursor: default;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #logo {
+    /* Logo nested in the menu bar */
+    float: left;
+    font-family: "Georgia", "Times", "Times New Roman", "serif";
+    font-weight: bolder;
+    background-color: #4aaaa5;
+    color: white;
+    margin-left: 10%;
+    padding: 20px;
+    font-size: 2em;
+    /* This sets the logo to the top of the screen and aligns it with the main element section */
+    position: relative;
+    top: 0;
+    cursor: default;
+  }
+}
+
+/* ---------------------------- MEDIA QUERIES FOR PROFILE IMAGE ON INDEX.HTML ---------------------------- */
+
+@media screen and (min-width: 640px) {
+  #profileImg {
+    /* adjusts the size and orientation of the profile picture */
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    /* Allows text to flow around it */
+    float: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
   #profileImg {
     /* adjusts the size and orientation of the profile picture */
     width: 200px;
     height: 203px;
     margin-right: 20px;
+    margin-left: 0px;
     margin-bottom: 20px;
     /* Allows text to flow around it */
     float: left;
   }
 }
 
-@media screen and (min-width: 981px) {
-  .contact {
-    margin-right: 5%;
-  }
-}
+/* ---------------------------- MEDIA QUERIES FOR MAIN ELEMENT WINDOW ---------------------------- */
 
-@media screen and (min-width: 981px) {
-  #logo {
-    margin-left: 5%;
-  }
-}
-
-/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN OVER 980px ---------------------------- */
-/* Desktop/laptop settings under 980px */
-
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 640px) {
   .about,
   .form,
   .portfolio {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  #profileImg {
-    /* adjusts the size and orientation of the profile picture */
-    float: none;
-    width: 100%;
-    height: auto;
-    margin-right: 0px;
-  }
-}
-
-/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN 768px ---------------------------- */
-/* iPad / Tablet settings 768px */
-
-@media screen and (max-width: 768px) {
-  .about,
-  .form,
-  .portfolio {
-    clear: both;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 5%;
-    align-content: center;
-    width: 83%;
-    float: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #profileImg {
-    /* adjusts the size and orientation of the profile picture */
-    width: 200px;
-    height: 203px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    /* Allows text to flow around it */
-    float: left;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact {
-    clear: both;
     display: inline-block;
-    width: 83%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 18%;
-    float: none;
+    align-content: left;
+    width: 550px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  #logo {
-    margin-left: 5%;
-  }
-}
-
-/* ---------------------------- MEDIA QUERIES FOR RESPONSIVE DESIGN 640px ---------------------------- */
-/* iPhone / Phone screen settings 640px */
-
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 768px) {
   .about,
   .form,
   .portfolio {
-    width: 500px;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    display: inline-block;
+    align-content: left;
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 640px) {
-  #profileImg {
-    /* adjusts the size and orientation of the profile picture */
-    float: none;
-    width: 100%;
-    height: auto;
-    margin-right: 0px;
+@media screen and (min-width: 980px) {
+  .about,
+  .form,
+  .portfolio {
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 10%;
+    margin-right: 0;
+    margin-bottom: 5%;
+    display: inline-block;
+    width: 640px;
   }
 }
 
-@media screen and (max-width: 640px) {
+/* ---------------------------- MEDIA QUERIES FOR SOCIAL SIDEBAR ---------------------------- */
+
+@media screen and (min-width: 640px) {
   .contact {
     clear: both;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 15%;
     display: inline-block;
-    width: 83%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 18%;
-    float: none;
     text-align: left;
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 640px) {
-  #logo {
+@media screen and (min-width: 768px) {
+  .contact {
     clear: both;
-    overflow: auto;
-    width: 100%;
-    margin-left: 0%;
-    text-align: center;
-    position: absolute;
-    top: -5px;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 15%;
+    display: inline-block;
+    text-align: left;
+    width: 90%;
   }
 }
 
-/* Change the menu for smaller screens */
-@media screen and (max-width: 640px) {
-  ul {
-    /* default heading font settings per recommended-homework-assignment.md */
-    width: 100%;
-    height: 85px;
-    margin-bottom: 40px;
+@media screen and (min-width: 980px) {
+  .contact {
+    clear: both;
+    /* Floating this right works, but not sure how it would do for responsive design. Looks great on my monitors */
+    float: right;
+    /* adds a background color, sets the element to an inline block and adjusts the sizing. */
+    margin-left: 0;
+    margin-right: 10%;
+    display: inline-block;
     text-align: center;
+    width: auto;
   }
 }
